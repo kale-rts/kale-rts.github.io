@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <body>
+
+    <div class="container">
+      <section id="main_content">
+        <p>{{ page.date | date: "%B %d, %Y" }}</p>
+        <h1>{{ page.title }}</h1>
+
+        {{ content }}
+
+        <!-- Previous / Next Navigation Links -->
+        <div class="blog-navigation" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
+          {% if page.previous.url %}
+            <span class="previous-link" style="float: left;">
+              <a href="{{ page.previous.url | relative_url }}">&larr; Previous: {{ page.previous.title }}</a>
+            </span>
+          {% endif %}
+          
+          {% if page.next.url %}
+            <span class="next-link" style="float: right;">
+              <a href="{{ page.next.url | relative_url }}">Next: {{ page.next.title }} &rarr;</a>
+            </span>
+          {% endif %}
+          <div style="clear: both;"></div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>

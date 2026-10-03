@@ -5,6 +5,9 @@ date: 2026-10-03 14:56:00 -0400
 categories: jekyll update
 ---
 
+* TOC
+{:toc}
+
 ## Why do we play games?
 Here's a short clip from an excellent talk MTG Head Designer [Mark Rosewater](https://markrosewater.tumblr.com/) gave at GDC 10 years ago. For now, just these ~2 min are enough, but I'd urge you to watch the whole thing when you get a chance. It is a masterclass in storytelling and being passionate about what you do.
 

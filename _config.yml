@@ -1,7 +1,7 @@
 title: Kale's RTS Blog
 description: "Thoughts, notes, and tutorials around RTS games."
 
-theme: hacker
+theme: jekyll-theme-hacker
 markdown: kramdown
 plugins:
   - jekyll-feed

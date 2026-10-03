@@ -3,36 +3,132 @@ layout: default
 ---
 
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
-  </head>
+<html lang="{{ site.lang | default: " en-US" }}">
 
-  <body>
-    <div class="container">
-      <section id="main_content">
-        <p>{{ page.date | date: "%B %d, %Y" }}</p>
-        <h1>{{ page.title }}</h1>
+<head>
+  <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+</head>
 
-        {{ content }}
+<body>
+  <div class="container">
+    <section id="main_content">
+      <p>{{ page.date | date: "%B %d, %Y" }}</p>
+      <h1>{{ page.title }}</h1>
 
-        <!-- Previous / Next Navigation Links -->
-        <div class="blog-navigation" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
-          {% if page.previous.url %}
-            <span class="previous-link" style="float: left;">
-              <a href="{{ page.previous.url | relative_url }}">&larr; Previous: {{ page.previous.title }}</a>
-            </span>
-          {% endif %}
-          
-          {% if page.next.url %}
-            <span class="next-link" style="float: right;">
-              <a href="{{ page.next.url | relative_url }}">Next: {{ page.next.title }} &rarr;</a>
-            </span>
-          {% endif %}
-          <div style="clear: both;"></div>
-        </div>
-      </section>
-    </div>
+      {{ content }}
 
-  </body>
+      <!-- Previous / Next Navigation Links -->
+      <div class="blog-navigation" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
+        {% if page.previous.url %}
+        <span class="previous-link" style="float: left;">
+          <a href="{{ page.previous.url | relative_url }}">&larr; Previous: {{ page.previous.title }}</a>
+        </span>
+        {% endif %}
+
+        {% if page.next.url %}
+        <span class="next-link" style="float: right;">
+          <a href="{{ page.next.url | relative_url }}">Next: {{ page.next.title }} &rarr;</a>
+        </span>
+        {% endif %}
+        <div style="clear: both;"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Styles for Header Anchor Links -->
+  <style>
+    /* Base styles for the headings to prevent layout shift */
+    #main_content h2,
+    #main_content h3,
+    #main_content h4 {
+      position: relative;
+    }
+
+    /* Anchor link layout */
+    .header-anchor {
+      margin-left: 8px;
+      color: #00ff00;
+      /* Hacker theme green color */
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+      cursor: pointer;
+      font-size: 0.8em;
+      vertical-align: middle;
+    }
+
+    /* Show the anchor icon when hovering over the heading */
+    #main_content h2:hover .header-anchor,
+    #main_content h3:hover .header-anchor,
+    #main_content h4:hover .header-anchor {
+      opacity: 1;
+    }
+
+    /* Toast notification style when link is copied */
+    .copy-toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #222;
+      color: #00ff00;
+      border: 1px solid #00ff00;
+      padding: 10px 20px;
+      font-family: monospace;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+  </style>
+
+  <!-- Script to generate anchors and handle clipboard copying -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select all post headings that Kramdown has generated IDs for
+      var headings = document.querySelectorAll("#main_content h2, #main_content h3, #main_content h4");
+
+      headings.forEach(function (heading) {
+        if (heading.id) {
+          // Create the anchor element
+          var anchor = document.createElement("a");
+          anchor.className = "header-anchor";
+          anchor.innerHTML = "🔗"; // You can change this to "#" or any emoji/text
+          anchor.title = "Copy link to this section";
+
+          // Add click behavior to copy link to clipboard
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Generate the absolute section URL
+            var shareUrl = window.location.origin + window.location.pathname + "#" + heading.id;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(shareUrl).then(function () {
+              showToast("Link copied to clipboard!");
+            }).catch(function (err) {
+              console.error('Could not copy text: ', err);
+            });
+
+            // Smooth scroll to the target heading and update location hash
+            window.location.hash = heading.id;
+          });
+
+          heading.appendChild(anchor);
+        }
+      });
+
+      // Helper function to show a custom confirmation message
+      function showToast(message) {
+        var toast = document.createElement("div");
+        toast.className = "copy-toast";
+        toast.innerText = message;
+        document.body.appendChild(toast);
+
+        setTimeout(function () {
+          toast.remove();
+        }, 2500);
+      }
+    });
+  </script>
+
+</body>
+
 </html>

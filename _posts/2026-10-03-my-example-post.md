@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "My Example Post"
 date: 2026-10-03 11:00:00 -0400
 categories: jekyll update

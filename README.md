@@ -1,3 +1,5 @@
 # kale-rts.github.io
 
-This is a test
+Running locally:
+1. `bundle install` (once/upon changes)
+2. `bundle exec jekyll serve`

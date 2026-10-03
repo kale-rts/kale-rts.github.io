@@ -1,0 +1,16 @@
+# Jekyll build output folder
+/_site/
+
+# Hidden Jekyll cache folders
+/.jekyll-cache/
+/.jekyll-metadata
+
+# Ruby dependency folders (if you run bundle config set --local path 'vendor/bundle')
+/vendor/
+/bundle/
+
+# Local Ruby version configuration files
+/.ruby-version
+
+# Operating System specific files
+.DS_Store

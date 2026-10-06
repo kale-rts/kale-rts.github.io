@@ -19,7 +19,7 @@ You can subscribe to `Kales Multitasking Trainer` mod via:
 3. You have enough experience with playing/watching the game to know you want to improve, but can't multitask well yet
 
 ## Description
-In [the previous post](./2026-10-03-rts-fundamentals.md), we saw how a mental checklist helps us multitask. This is my attempt at defining one for AoE2 DE, with its practice tool.
+In [the previous post]({ % post_url 2026-10-03-rts-fundamentals %}), we saw how a mental checklist helps us multitask. This is my attempt at defining one for AoE2 DE, with its practice tool.
 
 ### AoE2 Checklist
 Here's the version we will be working on.

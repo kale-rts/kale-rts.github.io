@@ -9,7 +9,7 @@ categories: jekyll update
 {:toc}
 
 ## The Nature of Fundamentals
-In [Adjust your expectations](./2026-10-03-before-you-start-the-game.md#adjust-your-expectations), we learned that we must learn to walk before we can run. Fundamentals are the "simple" building blocks that more "complex" skills are made up of. The quotation marks around "simple" and "complex" are no accident.
+In [Adjust your expectations]({% post_url 2026-10-03-before-you-start-the-game %}#adjust-your-expectations), we learned that we must learn to walk before we can run. Fundamentals are the "simple" building blocks that more "complex" skills are made up of. The quotation marks around "simple" and "complex" are no accident.
 
 Fundamentals are deceivingly simple. To the untrained eye, they look easy and boring. You can feel tempted to rush past them to spend more time on flashier skills. You can feel a need to get out of the "beginner phase" that most people associate them to. I urge you **not** to do either of these.
 

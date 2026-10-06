@@ -37,6 +37,8 @@ This ~5m clip demonstrates why.
 1. individual tasks feel slow on their own; as with juggling, the challenge is **multitasking**
 2. multitasking is knowing what to do, when to do it, and for how long before doing something else
 
+<!-- TODO: include here somehow the idea of rhythm game/competing times as well as the pitfall of trying to cram more actions in "per tick" rather than emphasize single action, checklist, single action, ... -->
+
 ## Mental Checklist
 This ~30s clip introduces the concept that allows us to multitask effectively, applied to StarCraft II.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HzhIjG39Haw?si=8lV5ZQKgMofFzsK7&amp;start=131&amp;end=161" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -1,0 +1,7 @@
+<!-- TODO: include watch time? -->
+{% assign words = content | strip_html | number_of_words %}
+{% if words < 180 %}
+  1 min read
+{% else %}
+  {{ words | divided_by: 180 | plus: 1 }} min read
+{% endif %}

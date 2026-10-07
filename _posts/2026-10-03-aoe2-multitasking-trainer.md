@@ -112,7 +112,7 @@ TODO
 #### Video
 TODO
 
-### Level 5: 
+### Level 5: Extreme
 
 #### Mechanical Considerations
 * Using RMB to "snap" waypoints onto resources is now encouraged

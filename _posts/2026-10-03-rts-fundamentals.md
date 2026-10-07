@@ -118,7 +118,13 @@ Execution, when practiced well, helps you do more/faster. It doesn't help you kn
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0rjaMzRt9MA?si=siGkpNYLp63u3itt&amp;start=43&amp;end=87" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Not jumping "in and out" of tasks effectively
-You do not want to get mentally stuck on any individual task. Also, you do not want to stop going away from the viewport between task. Doing either breaks your mental checklist and multitasking, and is guranteed to lead to worse decisions that will snowball during the match. There's a difference between choosing to do a similar action repeatedly and tunneling on something blindly.
+You do not want to get mentally stuck on any individual task. Also, you do not want to stop going away from the viewport between tasks. Doing either breaks your mental checklist and multitasking, and is guranteed to lead to worse decisions that will snowball during the match. There's a difference between choosing to do a similar action repeatedly and tunneling on something blindly.
+
+### Blindly anchoring towards actions
+This short clip introduces the concept, the gotcha, and the fix.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CJBZqZOOZkY?si=wb3YznAoJOam9lH_&amp;start=914&amp;end=972" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**TLDW:** any auditory/visual/etc cue should be anchored towards your checklist, not "auto pilot"
 
 ### Learning a hotkey before doing its action manually
 Hotkeys are a **mechanical optimization** of something. You need to understand the context of what that is to determine how important it is to your game, and whether a hotkey's benefits outweigh its drawbacks. You have limited physical real estate in your keyboard, mouse, and hands. [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) most hotkeys most of the time, so spend time on those that matter most for what you want.

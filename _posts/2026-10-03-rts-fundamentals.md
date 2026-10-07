@@ -117,11 +117,11 @@ Execution, when practiced well, helps you do more/faster. It doesn't help you kn
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0rjaMzRt9MA?si=siGkpNYLp63u3itt&amp;start=43&amp;end=87" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+### Not jumping "in and out" of tasks effectively
+You do not want to get mentally stuck on any individual task. Also, you do not want to stop going away from the viewport between task. Doing either breaks your mental checklist and multitasking, and is guranteed to lead to worse decisions that will snowball during the match. There's a difference between choosing to do a similar action repeatedly and tunneling on something blindly.
+
 ### Learning a hotkey before doing its action manually
 Hotkeys are a **mechanical optimization** of something. You need to understand the context of what that is to determine how important it is to your game, and whether a hotkey's benefits outweigh its drawbacks. You have limited physical real estate in your keyboard, mouse, and hands. [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) most hotkeys most of the time, so spend time on those that matter most for what you want.
-
-### Not jumping "in and out" of tasks
-You do not want to get mentally stuck on any individual task. Doing so breaks your mental checklist and multitasking, and is guranteed to lead to worse decisions that will snowball during the match. There's a difference between choosing to do a similar action repeatedly and tunneling on something blindly.
 
 ### Not configuring your game properly
 This can look different based on context. Impractical/uncomfortable hotkeys, scattered UI layouts, etc. Not all games will let you tune everything, but you should try to set yourself up for success where you can.
